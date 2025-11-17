@@ -28,7 +28,6 @@ export default function About() {
                 About Me
               </h1>
               <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
-                {/* TODO: Add your personal introduction/bio here */}
                 I'm a passionate web designer and developer with a focus on creating beautiful, 
                 functional, and user-friendly websites. I specialize in modern web design 
                 principles and cutting-edge technologies to bring your vision to life.
@@ -52,7 +51,6 @@ export default function About() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {/* TODO: Update with your actual frontend skills */}
                     <Badge>React</Badge>
                     <Badge>Next.js</Badge>
                     <Badge>TypeScript</Badge>
@@ -71,7 +69,6 @@ export default function About() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {/* TODO: Update with your actual design skills */}
                     <Badge variant="secondary">Figma</Badge>
                     <Badge variant="secondary">Adobe XD</Badge>
                     <Badge variant="secondary">UI/UX Design</Badge>
@@ -89,7 +86,6 @@ export default function About() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {/* TODO: Update with your actual backend skills */}
                     <Badge variant="outline">Node.js</Badge>
                     <Badge variant="outline">Git</Badge>
                     <Badge variant="outline">REST APIs</Badge>
@@ -106,7 +102,6 @@ export default function About() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {/* TODO: Update with your additional skills */}
                     <Badge variant="outline">SEO</Badge>
                     <Badge variant="outline">Performance Optimization</Badge>
                     <Badge variant="outline">Accessibility</Badge>

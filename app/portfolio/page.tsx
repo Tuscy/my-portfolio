@@ -7,13 +7,12 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
-// TODO: Replace with your actual project data
 const projects = [
   {
     id: 1,
     title: "E-Commerce Platform",
     description: "A modern e-commerce platform with shopping cart, payment integration, and admin dashboard.",
-    image: "/next.svg", // TODO: Replace with actual project image
+    image: "/next.svg",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/example",
@@ -22,7 +21,7 @@ const projects = [
     id: 2,
     title: "Portfolio Website",
     description: "A responsive portfolio website showcasing projects and skills with dark mode support.",
-    image: "/vercel.svg", // TODO: Replace with actual project image
+    image: "/vercel.svg",
     technologies: ["React", "Next.js", "TypeScript"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/example",
@@ -31,7 +30,7 @@ const projects = [
     id: 3,
     title: "Task Management App",
     description: "A collaborative task management application with real-time updates and team collaboration features.",
-    image: "/window.svg", // TODO: Replace with actual project image
+    image: "/window.svg",
     technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/example",
@@ -40,7 +39,7 @@ const projects = [
     id: 4,
     title: "Landing Page Design",
     description: "A beautiful landing page design with smooth animations and modern UI components.",
-    image: "/globe.svg", // TODO: Replace with actual project image
+    image: "/globe.svg",
     technologies: ["HTML5", "CSS3", "JavaScript", "GSAP"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/example",
@@ -49,7 +48,7 @@ const projects = [
     id: 5,
     title: "Dashboard Application",
     description: "A comprehensive dashboard with data visualization, charts, and analytics.",
-    image: "/file.svg", // TODO: Replace with actual project image
+    image: "/file.svg",
     technologies: ["React", "D3.js", "TypeScript", "Material-UI"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/example",
@@ -58,7 +57,7 @@ const projects = [
     id: 6,
     title: "Blog Platform",
     description: "A full-featured blog platform with markdown support, comments, and SEO optimization.",
-    image: "/next.svg", // TODO: Replace with actual project image
+    image: "/next.svg",
     technologies: ["Next.js", "MDX", "Prisma", "PostgreSQL"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/example",
@@ -79,7 +78,6 @@ export default function Portfolio() {
                 Portfolio
               </h1>
               <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
-                {/* TODO: Add your portfolio introduction */}
                 A collection of my recent projects showcasing my skills in web design and development. 
                 Each project represents a unique challenge and solution.
               </p>

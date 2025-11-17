@@ -16,32 +16,30 @@ import {
   ExternalLink
 } from "lucide-react";
 
-// Featured projects for preview section (first 3 from portfolio)
 const featuredProjects = [
   {
     id: 1,
     title: "E-Commerce Platform",
     description: "A modern e-commerce platform with shopping cart, payment integration, and admin dashboard.",
-    image: "/next.svg", // TODO: Replace with actual project image
+    image: "/next.svg", 
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
     id: 2,
     title: "Portfolio Website",
     description: "A responsive portfolio website showcasing projects and skills with dark mode support.",
-    image: "/vercel.svg", // TODO: Replace with actual project image
+    image: "/vercel.svg", 
     technologies: ["React", "Next.js", "TypeScript"],
   },
   {
     id: 3,
     title: "Task Management App",
     description: "A collaborative task management application with real-time updates and team collaboration.",
-    image: "/window.svg", // TODO: Replace with actual project image
+    image: "/window.svg", 
     technologies: ["React", "Node.js", "MongoDB"],
   },
 ];
 
-// Services data
 const services = [
   {
     icon: Palette,
@@ -70,7 +68,6 @@ const services = [
   },
 ];
 
-// Key technologies
 const technologies = [
   "React",
   "Next.js",
@@ -95,14 +92,12 @@ export default function Home() {
               {/* Left side - Text content */}
               <div className="flex flex-1 flex-col items-center gap-6 text-center lg:items-start lg:text-left">
                 <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-                  {/* TODO: Update with your name and tagline */}
-                  Hi, I'm a{" "}
+                  Hi, I'm Rhyse, a{" "}
                   <span className="text-primary">Web Designer</span>
                   <br />
                   & Developer
                 </h1>
                 <p className="max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-                  {/* TODO: Add your personal introduction */}
                   I create beautiful, functional, and user-friendly websites that help businesses 
                   grow and succeed online. Specializing in modern web design and development.
                 </p>
@@ -147,7 +142,6 @@ export default function Home() {
                 Services I Offer
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                {/* TODO: Customize this description */}
                 Comprehensive web design and development services to bring your vision to life
               </p>
             </div>
@@ -185,7 +179,6 @@ export default function Home() {
                   Featured Work
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground">
-                  {/* TODO: Customize this description */}
                   A selection of my recent projects showcasing my skills and expertise
                 </p>
               </div>
@@ -238,7 +231,6 @@ export default function Home() {
                 Technologies & Skills
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                {/* TODO: Customize this description */}
                 Technologies and tools I work with to create amazing web experiences
               </p>
             </div>
@@ -263,7 +255,6 @@ export default function Home() {
                   Let's Work Together
                 </CardTitle>
                 <CardDescription className="mt-4 text-lg">
-                  {/* TODO: Customize this message */}
                   Have a project in mind? I'd love to hear from you. 
                   Let's create something amazing together.
                 </CardDescription>

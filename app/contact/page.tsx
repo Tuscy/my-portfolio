@@ -19,7 +19,6 @@ export default function Contact() {
                 Get In Touch
               </h1>
               <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
-                {/* TODO: Add your contact introduction */}
                 Have a project in mind? I'd love to hear from you. Contact me by email or book a call below.
               </p>
             </div>
@@ -46,7 +45,6 @@ export default function Contact() {
                       href="mailto:your.email@example.com"
                       className="text-sm sm:text-base text-muted-foreground hover:text-foreground transition-colors break-all"
                     >
-                      {/* TODO: Add your email */}
                       rhyse.business@gmail.com
                     </a>
                   </div>
@@ -58,19 +56,16 @@ export default function Contact() {
                 {/* Booking Section */}
                 <div className="flex flex-col gap-4">
                   <p className="text-sm sm:text-base text-muted-foreground">
-                    {/* TODO: Customize this description */}
                     Ready to start your project? Book a call to discuss your needs, 
                     timeline, and how I can help bring your vision to life.
                   </p>
                   <Button size="lg" className="w-full min-h-[44px]" asChild>
                     <Link href="https://calendly.com/rhyse-business/30min" target="_blank" rel="noopener noreferrer">
-                      {/* TODO: Replace # with your booking system URL */}
                       <Calendar className="mr-2 h-4 w-4" />
                       Book a Call
                     </Link>
                   </Button>
                   <p className="text-xs text-muted-foreground text-center">
-                    {/* TODO: Add any additional booking instructions */}
                     Click to open the booking system in a new tab
                   </p>
                 </div>
