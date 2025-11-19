@@ -19,24 +19,17 @@ import {
 const featuredProjects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "iOS App Website",
     description: "A modern e-commerce platform with shopping cart, payment integration, and admin dashboard.",
     image: "/next.svg", 
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
     id: 2,
-    title: "Portfolio Website",
+    title: "Events Site",
     description: "A responsive portfolio website showcasing projects and skills with dark mode support.",
     image: "/vercel.svg", 
     technologies: ["React", "Next.js", "TypeScript"],
-  },
-  {
-    id: 3,
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates and team collaboration.",
-    image: "/window.svg", 
-    technologies: ["React", "Node.js", "MongoDB"],
   },
 ];
 
