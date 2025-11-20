@@ -3,7 +3,6 @@ import Header from "@/components/header";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { 
@@ -22,15 +21,22 @@ const featuredProjects = [
     title: "iOS App Website",
     description: "A modern e-commerce platform with shopping cart, payment integration, and admin dashboard.",
     image: "/next.svg", 
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    liveUrl: "https://shifthabits.co.uk"
   },
   {
     id: 2,
     title: "Events Site",
     description: "A responsive portfolio website showcasing projects and skills with dark mode support.",
     image: "/vercel.svg", 
-    technologies: ["React", "Next.js", "TypeScript"],
+    liveUrl: "https://havenhq.co.uk"
   },
+  {
+    id: 3,
+    title: "Media Page",
+    description: "A responsive portfolio website showcasing projects and skills with dark mode support.",
+    image: "/vercel.svg", 
+    liveUrl: "https://www.youumedia.com"
+  }
 ];
 
 const services = [
@@ -51,25 +57,19 @@ const services = [
   },
   {
     icon: Globe,
-    title: "Responsive Design",
+    title: "SEO",
     description: "Ensuring your website looks perfect on all devices, from mobile phones to desktop computers.",
   },
   {
     icon: Sparkles,
     title: "Custom Solutions",
     description: "Tailored web solutions designed to meet your specific business needs and goals.",
-  },
-];
-
-const technologies = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Tailwind CSS",
-  "Node.js",
-  "UI/UX Design",
-  "Figma",
-  "Responsive Design",
+  }, 
+  {
+    icon: Sparkles,
+    title: "Custom Solutions",
+    description: "Tailored web solutions designed to meet your specific business needs and goals.",
+  }
 ];
 
 export default function Home() {
@@ -85,25 +85,23 @@ export default function Home() {
               {/* Left side - Text content */}
               <div className="flex flex-1 flex-col items-center gap-6 text-center lg:items-start lg:text-left">
                 <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-                  Hi, I'm Rhyse, a{" "}
-                  <span className="text-primary">Web Designer</span>
-                  <br />
-                  & Developer
+                  Hi, I'm Rhyse a{" "}
+                  <span className="text-primary">Web Developer</span>
                 </h1>
                 <p className="max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-                  I create beautiful, functional, and user-friendly websites that help businesses 
-                  grow and succeed online. Specializing in modern web design and development.
+                  I create beautiful, functional, and easy to use websites that help businesses 
+                  grow their online presence.
                 </p>
                 <div className="flex flex-col gap-4 sm:flex-row">
                   <Button size="lg" asChild>
-                    <Link href="/portfolio">
-                      View My Work
+                    <Link href="https://calendly.com/rhyse-business/30min" target="_blank" rel="noopener noreferrer">
+                      Book a Call
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
                     <Link href="/contact">
-                      Get In Touch
+                      View My Work
                     </Link>
                   </Button>
                 </div>
@@ -132,7 +130,7 @@ export default function Home() {
           <div className="container mx-auto max-w-6xl">
             <div className="mb-12 text-center">
               <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-                Services I Offer
+                My Services
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 Comprehensive web design and development services to bring your vision to life
@@ -178,29 +176,22 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {featuredProjects.map((project) => (
-                <Card key={project.id} className="group overflow-hidden hover:shadow-lg transition-shadow">
-                  <div className="relative h-48 w-full overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                  </div>
-                  <CardHeader>
-                    <CardTitle>{project.title}</CardTitle>
-                    <CardDescription>{project.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech) => (
-                        <Badge key={tech} variant="secondary">
-                          {tech}
-                        </Badge>
-                      ))}
+                <Link href={project.liveUrl} target="_blank" key={project.id}>
+                  <Card key={project.id} className="group overflow-hidden hover:shadow-lg transition-shadow">
+                    <div className="relative h-48 w-full overflow-hidden">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
                     </div>
-                  </CardContent>
-                </Card>
+                    <CardHeader>
+                      <CardTitle>{project.title}</CardTitle>
+                      <CardDescription>{project.description}</CardDescription>
+                    </CardHeader>
+                  </Card>
+                </Link>
               ))}
             </div>
             <div className="mt-8 text-center">
@@ -210,29 +201,6 @@ export default function Home() {
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-            </div>
-          </div>
-        </section>
-
-        <Separator />
-
-        {/* Technologies Section */}
-        <section className="px-4 py-16 sm:px-6 lg:px-8">
-          <div className="container mx-auto max-w-4xl">
-            <div className="mb-12 text-center">
-              <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-                Technologies & Skills
-              </h2>
-              <p className="mt-4 text-lg text-muted-foreground">
-                Technologies and tools I work with to create amazing web experiences
-              </p>
-            </div>
-            <div className="flex flex-wrap justify-center gap-3">
-              {technologies.map((tech) => (
-                <Badge key={tech} variant="outline" className="px-4 py-2 text-sm">
-                  {tech}
-                </Badge>
-              ))}
             </div>
           </div>
         </section>
@@ -249,7 +217,7 @@ export default function Home() {
                 </CardTitle>
                 <CardDescription className="mt-4 text-lg">
                   Have a project in mind? I'd love to hear from you. 
-                  Let's create something amazing together.
+                  Let's create something amazing.
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex justify-center">

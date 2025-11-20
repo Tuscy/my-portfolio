@@ -10,57 +10,27 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "iOS App Website",
     description: "A modern e-commerce platform with shopping cart, payment integration, and admin dashboard.",
     image: "/next.svg",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Mailchimp"],
+    liveUrl: "https://shifthabits.co.uk"
   },
   {
     id: 2,
-    title: "Portfolio Website",
+    title: "Media Site",
     description: "A responsive portfolio website showcasing projects and skills with dark mode support.",
     image: "/vercel.svg",
     technologies: ["React", "Next.js", "TypeScript"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
+    liveUrl: "https://www.youumedia.com"
   },
   {
     id: 3,
-    title: "Task Management App",
+    title: "Events Company",
     description: "A collaborative task management application with real-time updates and team collaboration features.",
     image: "/window.svg",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-  },
-  {
-    id: 4,
-    title: "Landing Page Design",
-    description: "A beautiful landing page design with smooth animations and modern UI components.",
-    image: "/globe.svg",
-    technologies: ["HTML5", "CSS3", "JavaScript", "GSAP"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-  },
-  {
-    id: 5,
-    title: "Dashboard Application",
-    description: "A comprehensive dashboard with data visualization, charts, and analytics.",
-    image: "/file.svg",
-    technologies: ["React", "D3.js", "TypeScript", "Material-UI"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-  },
-  {
-    id: 6,
-    title: "Blog Platform",
-    description: "A full-featured blog platform with markdown support, comments, and SEO optimization.",
-    image: "/next.svg",
-    technologies: ["Next.js", "MDX", "Prisma", "PostgreSQL"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
+    technologies: ["Wordpress", "Woocommerce", "Stripe", "Ticketing System"],
+    liveUrl: "https://havenhq.co.uk"
   },
 ];
 
@@ -78,8 +48,7 @@ export default function Portfolio() {
                 Portfolio
               </h1>
               <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
-                A collection of my recent projects showcasing my skills in web design and development. 
-                Each project represents a unique challenge and solution.
+                A collection of my recent projects. If you'd like to see more, feel free to get in touch!
               </p>
             </div>
           </div>
@@ -117,15 +86,7 @@ export default function Portfolio() {
                     <Button variant="outline" size="sm" className="w-full sm:w-auto min-h-[44px]" asChild>
                       <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
-                      </Link>
-                    </Button>
-                  )}
-                  {project.githubUrl && (
-                    <Button variant="outline" size="sm" className="w-full sm:w-auto min-h-[44px]" asChild>
-                      <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
+                        Visit Site
                       </Link>
                     </Button>
                   )}

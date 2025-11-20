@@ -12,9 +12,9 @@ export default function Contact() {
         <Header />
         
         {/* Header Section */}
-        <section className="px-4 py-12 sm:px-6 sm:pt-16 sm:pb-8 lg:px-8">
+        <section className="px-4 py-8 sm:px-6 sm:pt-16 sm:pb-8 lg:px-8">
           <div className="container mx-auto max-w-4xl">
-            <div className="flex flex-col items-center gap-6 text-center">
+            <div className="flex flex-col items-center gap-4 text-center">
               <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
                 Get In Touch
               </h1>

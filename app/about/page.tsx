@@ -114,31 +114,6 @@ export default function About() {
 
         </section>
 
-        <Separator />
-
-        {/* Experience Section */}
-        <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8">Experience</h2>
-            <div className="space-y-4">
-              {/* TODO: Add your work experience here */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Freelance Web Designer</CardTitle>
-                  <CardDescription>2020 - Present</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground text-sm sm:text-base">
-                    {/* TODO: Add your experience description */}
-                    Creating custom websites and web applications for clients across various industries. 
-                    Specializing in responsive design, user experience optimization, and modern web technologies.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         <Footer />
       </main>
     </div>
