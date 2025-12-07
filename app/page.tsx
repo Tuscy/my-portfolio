@@ -81,27 +81,6 @@ const testimonials = [
     quote: "The custom-coded website Rhyse created for us is fast, secure, and perfectly tailored to our needs. Our conversion rates have improved significantly.",
     rating: 5
   },
-  {
-    id: 4,
-    name: "David Thompson",
-    company: "Local Business Group",
-    quote: "Professional, reliable, and talented. Rhyse transformed our online presence with a stunning WordPress site that's easy to manage.",
-    rating: 5
-  },
-  {
-    id: 5,
-    name: "Lisa Anderson",
-    company: "Digital Marketing Co.",
-    quote: "The attention to detail and commitment to quality is evident in every aspect of the website. Rhyse is a true professional.",
-    rating: 5
-  },
-  {
-    id: 6,
-    name: "James Wilson",
-    company: "Startup Ventures",
-    quote: "From concept to launch, Rhyse guided us through the entire process. The result is a website that perfectly represents our brand.",
-    rating: 5
-  }
 ];
 
 export default function Home() {
