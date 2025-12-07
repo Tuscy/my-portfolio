@@ -96,7 +96,7 @@ export default function Header() {
                                                 : "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                                             textColor
                                         )}>
-                                            About
+                                            About Me
                                         </NavigationMenuLink>
                                     </Link>
                                 </NavigationMenuItem>
@@ -126,7 +126,7 @@ export default function Header() {
                                                 : "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                                             textColor
                                         )}>
-                                            Contact
+                                            Contact Me
                                         </NavigationMenuLink>
                                     </Link>
                                 </NavigationMenuItem>

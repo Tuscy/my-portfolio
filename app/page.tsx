@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import PricingSection from "@/components/pricing-section";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,7 +13,8 @@ import {
   Globe, 
   Sparkles, 
   ArrowRight,
-  ExternalLink
+  ExternalLink,
+  Star
 } from "lucide-react";
 
 const featuredProjects = [
@@ -54,21 +56,51 @@ const services = [
     icon: Smartphone,
     title: "UI/UX Design",
     description: "Designing intuitive user interfaces and experiences that delight users and drive engagement.",
+  }
+];
+
+const testimonials = [
+  {
+    id: 1,
+    name: "Sarah Johnson",
+    company: "TechStart Inc.",
+    quote: "Rhyse delivered an exceptional website that exceeded our expectations. The design is modern, the functionality is flawless, and the user experience is outstanding.",
+    rating: 5
   },
   {
-    icon: Globe,
-    title: "SEO",
-    description: "Ensuring your website looks perfect on all devices, from mobile phones to desktop computers.",
+    id: 2,
+    name: "Michael Chen",
+    company: "Creative Agency",
+    quote: "Working with Rhyse was a pleasure. He understood our vision and brought it to life with a beautiful, responsive website. Highly recommended!",
+    rating: 5
   },
   {
-    icon: Sparkles,
-    title: "Custom Solutions",
-    description: "Tailored web solutions designed to meet your specific business needs and goals.",
-  }, 
+    id: 3,
+    name: "Emily Rodriguez",
+    company: "E-commerce Solutions",
+    quote: "The custom-coded website Rhyse created for us is fast, secure, and perfectly tailored to our needs. Our conversion rates have improved significantly.",
+    rating: 5
+  },
   {
-    icon: Sparkles,
-    title: "Custom Solutions",
-    description: "Tailored web solutions designed to meet your specific business needs and goals.",
+    id: 4,
+    name: "David Thompson",
+    company: "Local Business Group",
+    quote: "Professional, reliable, and talented. Rhyse transformed our online presence with a stunning WordPress site that's easy to manage.",
+    rating: 5
+  },
+  {
+    id: 5,
+    name: "Lisa Anderson",
+    company: "Digital Marketing Co.",
+    quote: "The attention to detail and commitment to quality is evident in every aspect of the website. Rhyse is a true professional.",
+    rating: 5
+  },
+  {
+    id: 6,
+    name: "James Wilson",
+    company: "Startup Ventures",
+    quote: "From concept to launch, Rhyse guided us through the entire process. The result is a website that perfectly represents our brand.",
+    rating: 5
   }
 ];
 
@@ -161,18 +193,59 @@ export default function Home() {
 
         <Separator />
 
+        {/* Pricing Section */}
+        <PricingSection />
+
+        <Separator />
+
+        {/* Testimonials Section */}
+        <section className="px-4 py-16 sm:px-6 lg:px-8">
+          <div className="container mx-auto max-w-6xl">
+            <div className="mb-12 text-center">
+              <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+                What Clients Say
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Don't just take our word for it - hear from our satisfied clients
+              </p>
+            </div>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {testimonials.map((testimonial) => (
+                <Card key={testimonial.id} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="flex items-center gap-1 mb-2">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
+                    <CardDescription className="text-base italic">
+                      "{testimonial.quote}"
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="mt-4">
+                      <p className="font-semibold text-sm">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <Separator />
+
         {/* Featured Work Section */}
         <section className="px-4 py-16 sm:px-6 lg:px-8">
           <div className="container mx-auto max-w-6xl">
-            <div className="mb-12 flex items-center justify-between">
-              <div>
-                <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-                  Featured Work
-                </h2>
-                <p className="mt-4 text-lg text-muted-foreground">
-                  A selection of my recent projects showcasing my skills and expertise
-                </p>
-              </div>
+            <div className="mb-12 text-center">
+              <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+                Featured Work
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                A selection of my recent projects showcasing my skills and expertise
+              </p>
             </div>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {featuredProjects.map((project) => (
