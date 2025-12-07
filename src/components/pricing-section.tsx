@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -196,6 +197,8 @@ const hostingData = {
 };
 
 export default function PricingSection() {
+  const [isHostingOpen, setIsHostingOpen] = useState<string | undefined>(undefined);
+
   return (
     <section className="flex min-h-screen items-center justify-center px-4 py-16 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
@@ -257,7 +260,13 @@ export default function PricingSection() {
                         
                         {hasHosting && hostingPlans && (
                           <div className="mt-6 pt-6 border-t">
-                            <Accordion type="single" collapsible className="w-full">
+                            <Accordion 
+                              type="single" 
+                              collapsible 
+                              className="w-full"
+                              value={isHostingOpen}
+                              onValueChange={setIsHostingOpen}
+                            >
                               <AccordionItem value="hosting" className="border-none">
                                 <AccordionTrigger className="text-sm font-semibold py-2 hover:no-underline">
                                   Hosting Options
