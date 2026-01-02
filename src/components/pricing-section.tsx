@@ -201,7 +201,7 @@ export default function PricingSection() {
       return { "template-based": templateBased, "fully-custom": fullyCustom };
     } else if (tabKey === "shopify") {
       // Only show standard for shopify
-      const { standard } = plans;
+      const { standard } = plans as typeof pricingData["shopify"];
       return { standard };
     }
     // Show all plans for wordpress-site (essential, growth, premium)
