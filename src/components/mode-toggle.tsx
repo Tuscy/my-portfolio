@@ -35,7 +35,7 @@ export function ModeToggle({ textColor, borderColor, isScrolled, currentTheme }:
     : undefined;
 
   const buttonBg = isScrolled
-    ? (currentTheme === "dark" ? "bg-white" : "bg-black")
+    ? (currentTheme === "dark" ? "bg-white" : "bg-[#161717]")
     : undefined;
 
   return (
