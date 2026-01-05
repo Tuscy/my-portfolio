@@ -32,13 +32,13 @@ const shopifyServices = [
     icon: Settings,
     title: "Shopify Customization",
     description: "Custom apps, functionality, and integrations to enhance your Shopify store's capabilities.",
-    features: ["Custom Apps", "Third-party Integrations", "Performance Optimization"]
+    features: ["Custom Apps", "Third-party Integrations", "Performance Optimisation"]
   },
   {
     icon: CreditCard,
     title: "Payment & Checkout",
     description: "Seamless payment processing and optimized checkout experience to maximize conversions.",
-    features: ["Payment Integration", "Checkout Optimization", "Security Features"]
+    features: ["Payment Integration", "Checkout Optimisation", "Security Features"]
   },
 ];
 
@@ -67,52 +67,9 @@ export default function ShopifyServices() {
                 Shopify Store Services
               </h1>
               <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
-                From custom Shopify theme design to store setup and optimization, I provide comprehensive 
+                From custom Shopify theme design to store setup and optimisation, I provide comprehensive 
                 Shopify development services to launch and grow your online store.
               </p>
-            </div>
-          </div>
-        </section>
-
-        <Separator />
-
-        {/* Services Section */}
-        <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-          <div className="container mx-auto max-w-6xl">
-            <div className="mb-12 text-center">
-              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
-                What I Offer
-              </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
-                Comprehensive Shopify development solutions for your e-commerce business
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {shopifyServices.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <Card key={service.title} className="hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10">
-                        <Icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <CardTitle className="text-xl">{service.title}</CardTitle>
-                      <CardDescription className="text-base mt-2">
-                        {service.description}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex flex-wrap gap-2">
-                        {service.features.map((feature) => (
-                          <Badge key={feature} variant="secondary">
-                            {feature}
-                          </Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
             </div>
           </div>
         </section>
@@ -164,7 +121,7 @@ export default function ShopifyServices() {
                   </ul>
                 </div>
                 <div className="mb-6">
-                  <h3 className="text-lg font-semibold mb-3">How pricing works (clear + reassuring):</h3>
+                  <h3 className="text-lg font-semibold mb-3">How pricing works:</h3>
                   <p className="text-sm text-muted-foreground mb-3">
                     Every Shopify store is different. Prices typically range between <strong>£699 – £3,500+</strong>, depending on:
                   </p>

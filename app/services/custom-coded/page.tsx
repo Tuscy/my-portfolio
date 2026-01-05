@@ -31,9 +31,9 @@ const customCodedServices = [
   },
   {
     icon: Zap,
-    title: "Performance Optimization",
-    description: "Lightning-fast websites optimized for speed, SEO, and user experience.",
-    features: ["Code Optimization", "Performance Tuning", "SEO Best Practices"]
+    title: "Performance Optimisation",
+    description: "Lightning-fast websites optimised for speed, SEO, and user experience.",
+    features: ["Code Optimisation", "Performance Tuning", "SEO Best Practices"]
   },
   {
     icon: Server,
@@ -45,11 +45,11 @@ const customCodedServices = [
 
 const customCodedBenefits = [
   "Complete control over design and functionality",
-  "Optimized performance and loading speeds",
+  "Optimised performance and loading speeds",
   "Scalable architecture for future growth",
   "No dependency on third-party platforms",
   "Custom features tailored to your needs",
-  "Better SEO control and optimization",
+  "Better SEO control and optimisation",
   "Enhanced security and data control",
   "Unique design that stands out"
 ];
@@ -71,49 +71,6 @@ export default function CustomCodedServices() {
                 From custom design to full-stack development, I provide comprehensive custom-coded website 
                 services built from the ground up to meet your exact requirements.
               </p>
-            </div>
-          </div>
-        </section>
-
-        <Separator />
-
-        {/* Services Section */}
-        <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-          <div className="container mx-auto max-w-6xl">
-            <div className="mb-12 text-center">
-              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
-                What I Offer
-              </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
-                Comprehensive custom development solutions for your business
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {customCodedServices.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <Card key={service.title} className="hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10">
-                        <Icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <CardTitle className="text-xl">{service.title}</CardTitle>
-                      <CardDescription className="text-base mt-2">
-                        {service.description}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex flex-wrap gap-2">
-                        {service.features.map((feature) => (
-                          <Badge key={feature} variant="secondary">
-                            {feature}
-                          </Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
             </div>
           </div>
         </section>
@@ -225,7 +182,7 @@ export default function CustomCodedServices() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Backend development (if required)</span>
+                      <span className="text-sm">Backend development</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -233,11 +190,11 @@ export default function CustomCodedServices() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Authentication & user flows (if needed)</span>
+                      <span className="text-sm">Authentication & user flows</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Admin dashboard (if applicable)</span>
+                      <span className="text-sm">Admin dashboard</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -258,6 +215,49 @@ export default function CustomCodedServices() {
                   </Button>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        <Separator />
+
+        {/* Services Section */}
+        <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+          <div className="container mx-auto max-w-6xl">
+            <div className="mb-12 text-center">
+              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
+                What I Offer
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Comprehensive custom development solutions for your business
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {customCodedServices.map((service) => {
+                const Icon = service.icon;
+                return (
+                  <Card key={service.title} className="hover:shadow-lg transition-shadow">
+                    <CardHeader>
+                      <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10">
+                        <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">{service.title}</CardTitle>
+                      <CardDescription className="text-base mt-2">
+                        {service.description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2">
+                        {service.features.map((feature) => (
+                          <Badge key={feature} variant="secondary">
+                            {feature}
+                          </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </section>

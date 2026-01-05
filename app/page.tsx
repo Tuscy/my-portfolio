@@ -9,12 +9,11 @@ import { Separator } from "@/components/ui/separator";
 import { 
   Code, 
   Palette, 
-  Smartphone, 
-  Globe, 
-  Sparkles, 
+  Globe,  
   ArrowRight,
   ExternalLink,
-  Star
+  Star,
+  Calendar
 } from "lucide-react";
 
 const featuredProjects = [
@@ -44,18 +43,18 @@ const featuredProjects = [
 const services = [
   {
     icon: Palette,
-    title: "Web Design",
-    description: "Creating beautiful, modern, and user-friendly website designs that engage and convert visitors.",
+    title: "Web Development",
+    description: "Creating beautiful, modern, and responsive website designs that engage and convert visitors. This includes any and all backends too.",
   },
   {
     icon: Code,
-    title: "Frontend Development",
-    description: "Building responsive, fast, and accessible web applications using the latest technologies.",
+    title: "Hosting & Maintenance",
+    description: "Providing reliable and secure web hosting solutions with regular maintenance to ensure optimal performance and uptime.",
   },
   {
-    icon: Smartphone,
-    title: "UI/UX Design",
-    description: "Designing intuitive user interfaces and experiences that delight users and drive engagement.",
+    icon: Globe,
+    title: "Search Engine Optimisation (SEO)",
+    description: "Optimising websites to improve search engine rankings, increase organic traffic, and enhance online visibility.",
   }
 ];
 
@@ -96,23 +95,24 @@ export default function Home() {
               {/* Left side - Text content */}
               <div className="flex flex-1 flex-col items-center gap-6 text-center lg:items-start lg:text-left">
                 <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-                  Hi, I'm Rhyse a{" "}
-                  <span className="text-primary">Web Developer</span>
+                  Welcome to StickySites,{" "}
+                  <span className="text-primary">I'm Rhyse</span>
                 </h1>
                 <p className="max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
                   I create beautiful, functional, and easy to use websites that help businesses 
-                  grow their online presence.
+                  grow their online presence and get their customers to stick.
                 </p>
                 <div className="flex flex-col gap-4 sm:flex-row">
                   <Button size="lg" asChild>
                     <Link href="https://calendly.com/rhyse-business/30min" target="_blank" rel="noopener noreferrer">
-                      Book a Call
-                      <ArrowRight className="ml-2 h-4 w-4" />
+                      Book a Free Audit
+                      <Calendar className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
-                    <Link href="/contact">
-                      View My Work
+                    <Link href="/services">
+                      Web Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                 </div>
@@ -177,8 +177,8 @@ export default function Home() {
 
         <Separator />
 
-        {/* Testimonials Section */}
-        <section className="px-4 py-16 sm:px-6 lg:px-8">
+        {/* Testimonials Section - Hidden for now */}
+        {/* <section className="px-4 py-16 sm:px-6 lg:px-8">
           <div className="container mx-auto max-w-6xl">
             <div className="mb-12 text-center">
               <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -213,7 +213,7 @@ export default function Home() {
           </div>
         </section>
 
-        <Separator />
+        <Separator /> */}
 
         {/* Featured Work Section */}
         <section className="px-4 py-16 sm:px-6 lg:px-8">

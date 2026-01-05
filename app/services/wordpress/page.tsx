@@ -21,19 +21,19 @@ const wordpressServices = [
     icon: Palette,
     title: "Custom WordPress Design",
     description: "Beautiful, modern WordPress themes tailored to your brand and business goals.",
-    features: ["Custom Theme Development", "UI/UX Optimization", "Brand Identity"]
+    features: ["Custom Theme Development", "UI/UX Optimisation", "Brand Identity"]
   },
   {
     icon: Settings,
     title: "WordPress Development",
     description: "Building fast, responsive WordPress sites using best practices and modern plugins.",
-    features: ["Custom Plugins", "Theme Customization", "Performance Optimization"]
+    features: ["Custom Plugins", "Theme Customization", "Performance Optimisation"]
   },
   {
     icon: Smartphone,
     title: "Mobile-First Design",
     description: "WordPress websites that look and work perfectly on all devices, from mobile to desktop.",
-    features: ["Responsive Layouts", "Touch Optimization", "Cross-Browser Support"]
+    features: ["Responsive Layouts", "Touch Optimisation", "Cross-Browser Support"]
   },
   {
     icon: Server,
@@ -71,49 +71,6 @@ export default function WordPressServices() {
                 From custom WordPress design to deployment and hosting, I provide comprehensive WordPress 
                 development services to bring your online presence to life.
               </p>
-            </div>
-          </div>
-        </section>
-
-        <Separator />
-
-        {/* Services Section */}
-        <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-          <div className="container mx-auto max-w-6xl">
-            <div className="mb-12 text-center">
-              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
-                What I Offer
-              </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
-                Comprehensive WordPress development solutions for your business
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {wordpressServices.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <Card key={service.title} className="hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10">
-                        <Icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <CardTitle className="text-xl">{service.title}</CardTitle>
-                      <CardDescription className="text-base mt-2">
-                        {service.description}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex flex-wrap gap-2">
-                        {service.features.map((feature) => (
-                          <Badge key={feature} variant="secondary">
-                            {feature}
-                          </Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
             </div>
           </div>
         </section>
@@ -337,11 +294,6 @@ export default function WordPressServices() {
 
         <Separator />
 
-        {/* Pricing Section */}
-        <PricingSection />
-
-        <Separator />
-
         {/* Hosting Section */}
         <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
           <div className="container mx-auto max-w-4xl">
@@ -382,6 +334,49 @@ export default function WordPressServices() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </section>
+
+        <Separator />
+
+        {/* Services Section */}
+        <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+          <div className="container mx-auto max-w-6xl">
+            <div className="mb-12 text-center">
+              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
+                What I Offer
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Comprehensive WordPress development solutions for your business
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {wordpressServices.map((service) => {
+                const Icon = service.icon;
+                return (
+                  <Card key={service.title} className="hover:shadow-lg transition-shadow">
+                    <CardHeader>
+                      <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10">
+                        <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">{service.title}</CardTitle>
+                      <CardDescription className="text-base mt-2">
+                        {service.description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2">
+                        {service.features.map((feature) => (
+                          <Badge key={feature} variant="secondary">
+                            {feature}
+                          </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
           </div>
         </section>
 

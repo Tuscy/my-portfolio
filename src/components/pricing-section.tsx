@@ -29,7 +29,7 @@ const pricingData = {
       features: [
         "Up to 5 Pages (Home, About, Services, contact etc.)",
         "Site planning call",
-        "Blog setup & categories (if one of pages)",
+        "Blog setup & categories (if required)",
         "Google Analytics setup",
         "XML sitemaps",
         "Speed & mobile optimisation",
@@ -46,7 +46,7 @@ const pricingData = {
         "Complete Google Search Console setup",
         "SEO enhancements",
         "Up to three revision rounds",
-        "Site handover / editing walkthrough"
+        "Site handover & documentation"
       ],
       note: "Price depends on complexity of site"
     }
@@ -71,10 +71,10 @@ const pricingData = {
       features: [
         "Fully custom UI/UX design",
         "Custom frontend (React / Next.js / similar)",
-        "Backend development (if required)",
+        "Backend development",
         "Database & API setup",
-        "Authentication & user flows (if needed)",
-        "Admin dashboard (if applicable)",
+        "Authentication & user flows",
+        "Admin dashboard",
         "Deployment & infrastructure setup",
         "Documentation & handover"
       ],
@@ -112,7 +112,7 @@ const hostingData = {
       price: "£10",
       period: "/month",
       features: [
-        "Fast managed hosting (Hostinger)",
+        "Fast managed hosting",
         "SSL certificate",
         "Weekly automated backups",
         "Uptime monitoring",
@@ -143,29 +143,28 @@ const hostingData = {
   },
   "custom-coded": {
     "simply-hosting": {
-      price: "£10",
+      price: "£20",
       period: "/month",
       features: [
-        "Fast managed hosting (Hostinger)",
+        "Fast managed hosting",
         "SSL certificate",
         "Weekly automated backups",
         "Uptime monitoring",
-        "WordPress installed and configured"
       ]
     },
     "hosting-plus": {
-      price: "£30",
+      price: "£50",
       period: "/month",
       features: [
-        "WordPress core updates",
-        "Theme & plugin updates",
+        "Core updates",
+        "Plugin & Library updates",
         "Monthly security scans",
         "Malware monitoring",
         "Basic technical support"
       ]
     },
     "premium-hosting": {
-      price: "£75",
+      price: "£100",
       period: "/month",
       features: [
         "Up to an hour of edits a month",
@@ -237,8 +236,7 @@ export default function PricingSection() {
             // WordPress add-ons
             const wordpressAddOns = tabKey === "wordpress-site" ? [
               "Hosting",
-              "Legal setup (privacy policy - complianz plugin)",
-              "Sitemap etc (for essential plan)",
+              "Legal setup (privacy policy)",
               "Site migration",
               "Copywriting",
               "Additional pages"
@@ -282,7 +280,7 @@ export default function PricingSection() {
                               </div>
                             )}
                             <div className="mb-6">
-                              <h3 className="text-lg font-semibold mb-3">How pricing works (clear + reassuring):</h3>
+                              <h3 className="text-lg font-semibold mb-3">How pricing works:</h3>
                               <p className="text-sm text-muted-foreground mb-3">
                                 Every Shopify store is different. Prices typically range between {shopifyData.pricingRange}, depending on:
                               </p>

@@ -29,7 +29,7 @@ const seoServices = [
     icon: FileText,
     title: "On-Page SEO",
     description: "Optimize your website's content, structure, and HTML elements for search engines.",
-    features: ["Meta Tags", "Content Optimization", "Header Structure"]
+    features: ["Meta Tags", "Content Optimisation", "Header Structure"]
   },
   {
     icon: LinkIcon,
@@ -119,55 +119,12 @@ export default function SEOServices() {
           <div className="container mx-auto max-w-4xl">
             <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
               <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
-                SEO Services
+                Search Engine Optimisation (SEO)
               </h1>
               <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
                 Improve your website's search engine visibility and drive organic traffic to your business. 
                 Comprehensive SEO strategies tailored to help you rank higher and reach more customers.
               </p>
-            </div>
-          </div>
-        </section>
-
-        <Separator />
-
-        {/* Services Section */}
-        <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-          <div className="container mx-auto max-w-6xl">
-            <div className="mb-12 text-center">
-              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
-                SEO Solutions
-              </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
-                Comprehensive search engine optimization services
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {seoServices.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <Card key={service.title} className="hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10">
-                        <Icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <CardTitle className="text-xl">{service.title}</CardTitle>
-                      <CardDescription className="text-base mt-2">
-                        {service.description}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex flex-wrap gap-2">
-                        {service.features.map((feature) => (
-                          <Badge key={feature} variant="secondary">
-                            {feature}
-                          </Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
             </div>
           </div>
         </section>
@@ -186,7 +143,7 @@ export default function SEOServices() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="mb-6">
-                  Initial SEO setup to get your website ready for optimization
+                  Initial SEO setup to get your website ready for optimisation
                 </CardDescription>
                 <ul className="space-y-3">
                   {seoSetup.features.map((feature, index) => (
@@ -293,6 +250,49 @@ export default function SEOServices() {
 
         <Separator />
 
+        {/* Services Section */}
+        <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+          <div className="container mx-auto max-w-6xl">
+            <div className="mb-12 text-center">
+              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
+                My SEO Services
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Comprehensive search engine optimisation services
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {seoServices.map((service) => {
+                const Icon = service.icon;
+                return (
+                  <Card key={service.title} className="hover:shadow-lg transition-shadow">
+                    <CardHeader>
+                      <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10">
+                        <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">{service.title}</CardTitle>
+                      <CardDescription className="text-base mt-2">
+                        {service.description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2">
+                        {service.features.map((feature) => (
+                          <Badge key={feature} variant="secondary">
+                            {feature}
+                          </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <Separator />
+
         {/* Benefits Section */}
         <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
           <div className="container mx-auto max-w-4xl">
@@ -305,7 +305,7 @@ export default function SEOServices() {
                   <div>
                     <CardTitle className="text-2xl sm:text-3xl">Benefits of SEO</CardTitle>
                     <CardDescription className="text-base sm:text-lg mt-1">
-                      Why invest in search engine optimization
+                      Why invest in search engine optimisation
                     </CardDescription>
                   </div>
                 </div>

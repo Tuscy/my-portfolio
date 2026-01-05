@@ -291,7 +291,7 @@ export default function Header() {
                                                                         : "text-gray-400"
                                                                     : "text-muted-foreground"
                                                             )}>
-                                                                Search engine optimization
+                                                                Search engine optimisation
                                                             </p>
                                                         </NavigationMenuLink>
                                                     </Link>
@@ -310,7 +310,7 @@ export default function Header() {
                                                     : "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                                                 textColor
                                             )}>
-                                                About Me
+                                                About
                                             </NavigationMenuLink>
                                         </Link>
                                     </NavigationMenuItem>
@@ -325,7 +325,7 @@ export default function Header() {
                                                     : "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                                                 textColor
                                             )}>
-                                                Contact
+                                                Contact Me
                                             </NavigationMenuLink>
                                         </Link>
                                     </NavigationMenuItem>
@@ -464,7 +464,7 @@ export default function Header() {
                                             : "hover:bg-accent hover:text-accent-foreground"
                                     )}
                                 >
-                                    About Me
+                                    About
                                 </Link>
                             </li>
                             <li>

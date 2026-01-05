@@ -29,7 +29,7 @@ export default function About() {
               </h1>
               <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
                 I'm a passionate web designer and developer with a focus on creating beautiful, 
-                functional, and user-friendly websites. I specialize in modern web design 
+                functional, and user-friendly websites. I specialise in modern web design 
                 principles and cutting-edge technologies to bring your vision to life.
               </p>
             </div>
@@ -70,7 +70,6 @@ export default function About() {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">Figma</Badge>
-                    <Badge variant="secondary">Adobe XD</Badge>
                     <Badge variant="secondary">UI/UX Design</Badge>
                     <Badge variant="secondary">Responsive Design</Badge>
                     <Badge variant="secondary">Prototyping</Badge>
@@ -103,7 +102,7 @@ export default function About() {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="outline">SEO</Badge>
-                    <Badge variant="outline">Performance Optimization</Badge>
+                    <Badge variant="outline">Performance Optimisation</Badge>
                     <Badge variant="outline">Accessibility</Badge>
                     <Badge variant="outline">Project Management</Badge>
                   </div>

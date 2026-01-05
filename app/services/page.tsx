@@ -19,7 +19,7 @@ const services = [
   {
     icon: Code,
     title: "Shopify",
-    description: "Shopify store development with custom themes, e-commerce setup, and optimization services.",
+    description: "Shopify store development with custom themes, e-commerce setup, and optimisation services.",
     link: "/services/shopify",
   },
   {
@@ -31,7 +31,7 @@ const services = [
   {
     icon: Search,
     title: "SEO Services",
-    description: "Search engine optimization to improve your website's visibility and drive organic traffic to your business.",
+    description: "Search engine optimisation to improve your website's visibility and drive organic traffic to your business.",
     link: "/services/seo",
   },
 ];
@@ -82,7 +82,7 @@ export default function Services() {
               </h1>
               <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
                 Comprehensive web development and SEO services to help your business grow online. 
-                From custom websites to search engine optimization, I provide solutions tailored to your needs.
+                From custom websites to search engine optimisation, I provide solutions tailored to your needs.
               </p>
             </div>
           </div>
