@@ -21,21 +21,21 @@ const featuredProjects = [
     id: 1,
     title: "iOS App Website",
     description: "A modern e-commerce platform with shopping cart, payment integration, and admin dashboard.",
-    image: "/next.svg", 
+    image: "/shift-app.png", 
     liveUrl: "https://shifthabits.co.uk"
   },
   {
     id: 2,
     title: "Events Site",
     description: "A responsive portfolio website showcasing projects and skills with dark mode support.",
-    image: "/vercel.svg", 
+    image: "/haven-events.png", 
     liveUrl: "https://havenhq.co.uk"
   },
   {
     id: 3,
     title: "Media Page",
     description: "A responsive portfolio website showcasing projects and skills with dark mode support.",
-    image: "/vercel.svg", 
+    image: "/youu-media.png", 
     liveUrl: "https://www.youumedia.com"
   }
 ];

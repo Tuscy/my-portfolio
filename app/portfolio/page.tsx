@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     title: "iOS App Website",
     description: "A modern e-commerce platform with shopping cart, payment integration, and admin dashboard.",
-    image: "/next.svg",
+    image: "/shift-app.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Mailchimp"],
     liveUrl: "https://shifthabits.co.uk"
   },
@@ -20,7 +20,7 @@ const projects = [
     id: 2,
     title: "Media Site",
     description: "A responsive portfolio website showcasing projects and skills with dark mode support.",
-    image: "/vercel.svg",
+    image: "/youu-media.png",
     technologies: ["React", "Next.js", "TypeScript"],
     liveUrl: "https://www.youumedia.com"
   },
@@ -28,7 +28,7 @@ const projects = [
     id: 3,
     title: "Events Company",
     description: "A collaborative task management application with real-time updates and team collaboration features.",
-    image: "/window.svg",
+    image: "/haven-events.png",
     technologies: ["Wordpress", "Woocommerce", "Stripe", "Ticketing System"],
     liveUrl: "https://havenhq.co.uk"
   },
