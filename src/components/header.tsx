@@ -15,6 +15,12 @@ import {
     NavigationMenuTrigger,
     NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
 export default function Header() {
@@ -434,21 +440,95 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li>
-                                <Link
-                                    href="/services"
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                    className={cn(
-                                        "block rounded-md px-4 py-3 text-base font-medium transition-colors",
-                                        sidebarText,
-                                        isScrolled
-                                            ? currentTheme === "dark"
-                                                ? "hover:bg-gray-100"
-                                                : "hover:bg-gray-800"
-                                            : "hover:bg-accent hover:text-accent-foreground"
-                                    )}
-                                >
-                                    Services
-                                </Link>
+                                <Accordion type="single" collapsible className="w-full">
+                                    <AccordionItem value="services" className="border-none">
+                                        <AccordionTrigger
+                                            className={cn(
+                                                "rounded-md px-4 py-3 text-base font-medium transition-colors hover:no-underline",
+                                                sidebarText,
+                                                isScrolled
+                                                    ? currentTheme === "dark"
+                                                        ? "hover:bg-gray-100"
+                                                        : "hover:bg-gray-800"
+                                                    : "hover:bg-accent hover:text-accent-foreground"
+                                            )}
+                                        >
+                                            Services
+                                        </AccordionTrigger>
+                                        <AccordionContent className="pt-0">
+                                            <ul className="space-y-1 pl-4">
+                                                <li>
+                                                    <Link
+                                                        href="/services/wordpress"
+                                                        onClick={() => setIsMobileMenuOpen(false)}
+                                                        className={cn(
+                                                            "block rounded-md px-4 py-2 text-sm font-medium transition-colors",
+                                                            sidebarText,
+                                                            isScrolled
+                                                                ? currentTheme === "dark"
+                                                                    ? "hover:bg-gray-100"
+                                                                    : "hover:bg-gray-800"
+                                                                : "hover:bg-accent hover:text-accent-foreground"
+                                                        )}
+                                                    >
+                                                        WordPress
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link
+                                                        href="/services/shopify"
+                                                        onClick={() => setIsMobileMenuOpen(false)}
+                                                        className={cn(
+                                                            "block rounded-md px-4 py-2 text-sm font-medium transition-colors",
+                                                            sidebarText,
+                                                            isScrolled
+                                                                ? currentTheme === "dark"
+                                                                    ? "hover:bg-gray-100"
+                                                                    : "hover:bg-gray-800"
+                                                                : "hover:bg-accent hover:text-accent-foreground"
+                                                        )}
+                                                    >
+                                                        Shopify
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link
+                                                        href="/services/custom-coded"
+                                                        onClick={() => setIsMobileMenuOpen(false)}
+                                                        className={cn(
+                                                            "block rounded-md px-4 py-2 text-sm font-medium transition-colors",
+                                                            sidebarText,
+                                                            isScrolled
+                                                                ? currentTheme === "dark"
+                                                                    ? "hover:bg-gray-100"
+                                                                    : "hover:bg-gray-800"
+                                                                : "hover:bg-accent hover:text-accent-foreground"
+                                                        )}
+                                                    >
+                                                        Custom Coded
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link
+                                                        href="/services/seo"
+                                                        onClick={() => setIsMobileMenuOpen(false)}
+                                                        className={cn(
+                                                            "block rounded-md px-4 py-2 text-sm font-medium transition-colors",
+                                                            sidebarText,
+                                                            isScrolled
+                                                                ? currentTheme === "dark"
+                                                                    ? "hover:bg-gray-100"
+                                                                    : "hover:bg-gray-800"
+                                                                : "hover:bg-accent hover:text-accent-foreground"
+                                                        )}
+                                                    >
+                                                        SEO
+                                                    </Link>
+                                                </li>
+                                            </ul>
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                </Accordion>
                             </li>
                             <li>
                                 <Link
