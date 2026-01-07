@@ -1,11 +1,9 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import PricingSection from "@/components/pricing-section";
-import HeroTriangles from "@/components/hero-triangles";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { 
@@ -91,17 +89,16 @@ export default function Home() {
         <Header />
         
         {/* Hero Section */}
-        <section className="flex min-h-[calc(100vh-4rem)] items-center justify-center bg-destructive px-4 py-16 sm:px-6 lg:px-8">
+        <section className="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 py-16 sm:px-6 lg:px-8">
           <div className="container mx-auto max-w-6xl">
             <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:justify-between">
               {/* Left side - Text content */}
-              <div className="relative flex flex-1 flex-col items-center gap-6 overflow-hidden rounded-xl bg-background p-6 text-center text-foreground shadow-lg lg:items-start lg:text-left lg:p-8">
-                <HeroTriangles />
-                <h1 className="text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+              <div className="flex flex-1 flex-col items-center gap-6 rounded-xl bg-destructive p-6 text-center lg:items-start lg:text-left lg:p-8">
+                <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
                   Welcome to StickySites,{" "}
-                  <span className="text-accent">I'm Rhyse</span>
+                  <span className="text-primary">I'm Rhyse</span>
                 </h1>
-                <p className="max-w-2xl text-lg leading-8 text-foreground/80 sm:text-xl">
+                <p className="max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
                   I create beautiful, functional, and easy to use websites that help businesses 
                   grow their online presence and get their customers to stick.
                 </p>
@@ -143,10 +140,10 @@ export default function Home() {
         <section className="px-4 py-16 sm:px-6 lg:px-8">
           <div className="container mx-auto max-w-6xl">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+              <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
                 My Services
               </h2>
-              <p className="mt-4 text-lg text-foreground/70">
+              <p className="mt-4 text-lg text-muted-foreground">
                 Comprehensive web design and development services to bring your vision to life
               </p>
             </div>
@@ -184,10 +181,10 @@ export default function Home() {
         {/* <section className="px-4 py-16 sm:px-6 lg:px-8">
           <div className="container mx-auto max-w-6xl">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+              <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
                 What Clients Say
               </h2>
-              <p className="mt-4 text-lg text-foreground/70">
+              <p className="mt-4 text-lg text-muted-foreground">
                 Don't just take our word for it - hear from our satisfied clients
               </p>
             </div>
@@ -207,7 +204,7 @@ export default function Home() {
                   <CardContent>
                     <div className="mt-4">
                       <p className="font-semibold text-sm">{testimonial.name}</p>
-                      <p className="text-sm text-foreground/70">{testimonial.company}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -222,45 +219,31 @@ export default function Home() {
         <section className="px-4 py-16 sm:px-6 lg:px-8">
           <div className="container mx-auto max-w-6xl">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+              <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
                 Featured Work
               </h2>
-              <p className="mt-4 text-lg text-foreground/70">
+              <p className="mt-4 text-lg text-muted-foreground">
                 A selection of my recent projects showcasing my skills and expertise
               </p>
             </div>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {featuredProjects.map((project) => (
-                <CardContainer
-                  key={project.id}
-                  containerClassName="py-0"
-                  className="w-full h-full"
-                >
-                  <Link href={project.liveUrl} target="_blank" className="block w-full h-full">
-                    <CardBody className="!h-auto !w-full bg-card text-card-foreground rounded-xl border shadow-lg flex flex-col">
-                      <CardItem
-                        translateZ="50"
-                        className="w-full"
-                      >
-                        <div className="relative h-48 w-full overflow-hidden rounded-t-xl">
-                          <Image
-                            src={project.image}
-                            alt={project.title}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                      </CardItem>
-                      <CardItem
-                        translateZ="30"
-                        className="px-6 py-4"
-                      >
-                        <h3 className="text-xl font-semibold mb-2 text-foreground">{project.title}</h3>
-                        <p className="text-sm text-foreground/70">{project.description}</p>
-                      </CardItem>
-                    </CardBody>
-                  </Link>
-                </CardContainer>
+                <Link href={project.liveUrl} target="_blank" key={project.id}>
+                  <Card key={project.id} className="group overflow-hidden hover:shadow-lg transition-shadow">
+                    <div className="relative h-48 w-full overflow-hidden">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </div>
+                    <CardHeader>
+                      <CardTitle>{project.title}</CardTitle>
+                      <CardDescription>{project.description}</CardDescription>
+                    </CardHeader>
+                  </Card>
+                </Link>
               ))}
             </div>
             <div className="mt-8 text-center">
