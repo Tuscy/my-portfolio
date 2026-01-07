@@ -211,10 +211,10 @@ export default function PricingSection() {
     <section className="flex min-h-screen items-center justify-center px-4 py-16 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             Pricing
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-foreground/70">
             Choose the perfect plan for your project
           </p>
         </div>
@@ -256,7 +256,7 @@ export default function PricingSection() {
                             <div className="mt-4">
                               <span className="text-4xl font-bold">{shopifyData.price}</span>
                               {shopifyData.note && (
-                                <span className="text-lg text-muted-foreground ml-2">({shopifyData.note})</span>
+                                <span className="text-lg text-foreground/70 ml-2">({shopifyData.note})</span>
                               )}
                             </div>
                             {shopifyData.tagline && (
@@ -281,7 +281,7 @@ export default function PricingSection() {
                             )}
                             <div className="mb-6">
                               <h3 className="text-lg font-semibold mb-3">How pricing works:</h3>
-                              <p className="text-sm text-muted-foreground mb-3">
+                              <p className="text-sm text-foreground/70 mb-3">
                                 Every Shopify store is different. Prices typically range between {shopifyData.pricingRange}, depending on:
                               </p>
                               <ul className="space-y-2">
@@ -329,7 +329,7 @@ export default function PricingSection() {
                             <div className="mt-4">
                               <span className="text-4xl font-bold">{tierData.price}</span>
                               {tierData.note && (
-                                <p className="text-sm text-muted-foreground mt-2">{tierData.note}</p>
+                                <p className="text-sm text-foreground/70 mt-2">{tierData.note}</p>
                               )}
                             </div>
                             {tierData.timeline && (
@@ -367,10 +367,10 @@ export default function PricingSection() {
                             
                             {tabKey === "wordpress-site" && wordpressAddOns && (
                               <div className="mt-6 pt-6 border-t">
-                                <h3 className="text-sm font-semibold mb-3">Add-Ons:</h3>
+                                <h3 className="text-sm font-semibold mb-3 text-foreground">Add-Ons:</h3>
                                 <ul className="space-y-2">
                                   {wordpressAddOns.map((addon, index) => (
-                                    <li key={index} className="text-xs text-muted-foreground">
+                                    <li key={index} className="text-xs text-foreground/70">
                                       • {addon}
                                     </li>
                                   ))}

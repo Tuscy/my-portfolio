@@ -24,10 +24,10 @@ export default function About() {
                   priority
                 />
               </div>
-              <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
+              <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight text-foreground">
                 About Me
               </h1>
-              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
+              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-foreground/70">
                 I'm a passionate web designer and developer with a focus on creating beautiful, 
                 functional, and user-friendly websites. I specialise in modern web design 
                 principles and cutting-edge technologies to bring your vision to life.
@@ -41,7 +41,7 @@ export default function About() {
         {/* Skills Section */}
         <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8">Skills & Technologies</h2>
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-foreground">Skills & Technologies</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {/* Frontend Skills */}
               <Card>

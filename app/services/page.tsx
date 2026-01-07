@@ -77,10 +77,10 @@ export default function Services() {
         <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
           <div className="container mx-auto max-w-4xl">
             <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
+              <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight text-foreground">
                 Services
               </h1>
-              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
+              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-foreground/70">
                 Comprehensive web development and SEO services to help your business grow online. 
                 From custom websites to search engine optimisation, I provide solutions tailored to your needs.
               </p>
@@ -131,7 +131,7 @@ export default function Services() {
               <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
                 Pricing Overview
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-foreground/70">
                 Transparent pricing for all our services
               </p>
             </div>

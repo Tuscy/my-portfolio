@@ -67,7 +67,7 @@ export default function WordPressServices() {
               <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
                 WordPress Website Services
               </h1>
-              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
+              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-foreground/70">
                 From custom WordPress design to deployment and hosting, I provide comprehensive WordPress 
                 development services to bring your online presence to life.
               </p>
@@ -84,7 +84,7 @@ export default function WordPressServices() {
               <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
                 Pricing Plans
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-foreground/70">
                 Choose the perfect plan for your WordPress website
               </p>
             </div>
@@ -205,7 +205,7 @@ export default function WordPressServices() {
                   <div className="mt-4">
                     <span className="text-4xl font-bold">£999+</span>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <p className="text-sm text-foreground/70 mt-2">
                     (Price depends on complexity of site)
                   </p>
                 </CardHeader>
@@ -316,12 +316,12 @@ export default function WordPressServices() {
                   {hostingFeatures.map((feature, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                      <p className="text-sm sm:text-base text-muted-foreground">{feature}</p>
+                      <p className="text-sm sm:text-base text-foreground/70">{feature}</p>
                     </div>
                   ))}
                 </div>
                 <div className="mt-8 pt-6 border-t">
-                  <p className="text-sm sm:text-base text-muted-foreground mb-4">
+                  <p className="text-sm sm:text-base text-foreground/70 mb-4">
                     When you work with me for WordPress development, hosting can be included as part of the package. 
                     This ensures your website is deployed on reliable infrastructure with ongoing support and maintenance.
                   </p>
@@ -346,7 +346,7 @@ export default function WordPressServices() {
               <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
                 What I Offer
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-foreground/70">
                 Comprehensive WordPress development solutions for your business
               </p>
             </div>

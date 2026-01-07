@@ -57,7 +57,7 @@
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: #161717;
   --muted: #5e6062;
-  --muted-foreground: #5e6062;
+  --muted-foreground: #ffffff;
   --accent: #bedd2f;
   --accent-foreground: #161717;
   --destructive: #a6bf31;
@@ -126,6 +126,10 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-poppins), sans-serif;
     font-weight: 700;
+    color: var(--foreground);
+  }
+  p {
+    color: var(--foreground);
   }
 }
 

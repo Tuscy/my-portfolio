@@ -121,7 +121,7 @@ export default function SEOServices() {
               <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
                 Search Engine Optimisation (SEO)
               </h1>
-              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
+              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-foreground/70">
                 Improve your website's search engine visibility and drive organic traffic to your business. 
                 Comprehensive SEO strategies tailored to help you rank higher and reach more customers.
               </p>
@@ -165,7 +165,7 @@ export default function SEOServices() {
               <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
                 Monthly SEO Plans
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-foreground/70">
                 Choose the perfect SEO package for your business needs
               </p>
             </div>
@@ -195,7 +195,7 @@ export default function SEOServices() {
                       <CardTitle className="text-2xl">{displayName}</CardTitle>
                       <div className="mt-4">
                         <span className="text-4xl font-bold">{tierData.price}</span>
-                        <span className="text-lg text-muted-foreground ml-1">{tierData.period}</span>
+                        <span className="text-lg text-foreground/70 ml-1">{tierData.period}</span>
                       </div>
                     </CardHeader>
                     <CardContent className="flex-1 flex flex-col">
@@ -257,7 +257,7 @@ export default function SEOServices() {
               <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
                 My SEO Services
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-foreground/70">
                 Comprehensive search engine optimisation services
               </p>
             </div>
@@ -315,12 +315,12 @@ export default function SEOServices() {
                   {seoBenefits.map((benefit, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                      <p className="text-sm sm:text-base text-muted-foreground">{benefit}</p>
+                      <p className="text-sm sm:text-base text-foreground/70">{benefit}</p>
                     </div>
                   ))}
                 </div>
                 <div className="mt-8 pt-6 border-t">
-                  <p className="text-sm sm:text-base text-muted-foreground mb-4">
+                  <p className="text-sm sm:text-base text-foreground/70 mb-4">
                     SEO is a long-term investment that helps your business grow organically. 
                     By optimizing your website for search engines, you'll attract more qualified 
                     visitors who are actively searching for your products or services.

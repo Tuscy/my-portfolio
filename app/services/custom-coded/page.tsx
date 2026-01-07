@@ -67,7 +67,7 @@ export default function CustomCodedServices() {
               <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
                 Custom Coded Website Services
               </h1>
-              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
+              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-foreground/70">
                 From custom design to full-stack development, I provide comprehensive custom-coded website 
                 services built from the ground up to meet your exact requirements.
               </p>
@@ -84,7 +84,7 @@ export default function CustomCodedServices() {
               <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
                 Custom Website
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-foreground/70">
                 Choose the approach that best fits your needs
               </p>
             </div>
@@ -206,7 +206,7 @@ export default function CustomCodedServices() {
                     </li>
                   </ul>
                   <div className="mb-6 p-3 rounded-md bg-muted/50">
-                    <p className="text-xs text-muted-foreground italic">
+                    <p className="text-xs text-foreground/70 italic">
                       Final pricing depends on scope - all projects are quoted after a discovery call.
                     </p>
                   </div>
@@ -228,7 +228,7 @@ export default function CustomCodedServices() {
               <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
                 What I Offer
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-foreground/70">
                 Comprehensive custom development solutions for your business
               </p>
             </div>
@@ -286,12 +286,12 @@ export default function CustomCodedServices() {
                   {customCodedBenefits.map((benefit, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                      <p className="text-sm sm:text-base text-muted-foreground">{benefit}</p>
+                      <p className="text-sm sm:text-base text-foreground/70">{benefit}</p>
                     </div>
                   ))}
                 </div>
                 <div className="mt-8 pt-6 border-t">
-                  <p className="text-sm sm:text-base text-muted-foreground mb-4">
+                  <p className="text-sm sm:text-base text-foreground/70 mb-4">
                     Custom-coded websites give you complete control over every aspect of your site. 
                     Built from scratch using modern technologies, your website will be fast, secure, 
                     and perfectly tailored to your business needs.

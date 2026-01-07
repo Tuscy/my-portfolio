@@ -18,7 +18,7 @@ export default function Contact() {
               <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
                 Get In Touch
               </h1>
-              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
+              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-foreground/70">
                 Have a project in mind? I'd love to hear from you. Contact me by email or book a call below.
               </p>
             </div>
@@ -38,12 +38,12 @@ export default function Contact() {
               <CardContent className="space-y-6">
                 {/* Email Section */}
                 <div className="flex items-start gap-3">
-                  <Mail className="h-5 w-5 mt-0.5 text-muted-foreground shrink-0" />
+                  <Mail className="h-5 w-5 mt-0.5 text-foreground/70 shrink-0" />
                   <div className="flex-1">
-                    <p className="font-medium text-sm sm:text-base mb-1">Email</p>
+                    <p className="font-medium text-sm sm:text-base mb-1 text-foreground">Email</p>
                     <a
                       href="mailto:your.email@example.com"
-                      className="text-sm sm:text-base text-muted-foreground hover:text-foreground transition-colors break-all"
+                      className="text-sm sm:text-base text-foreground/70 hover:text-foreground transition-colors break-all"
                     >
                       rhyse@stkysites.com
                     </a>
@@ -55,7 +55,7 @@ export default function Contact() {
 
                 {/* Booking Section */}
                 <div className="flex flex-col gap-4">
-                  <p className="text-sm sm:text-base text-muted-foreground">
+                  <p className="text-sm sm:text-base text-foreground/70">
                     Ready to start your project? Book a call to discuss your needs, 
                     timeline, and how I can help bring your vision to life.
                   </p>
@@ -65,7 +65,7 @@ export default function Contact() {
                       Book a Call
                     </Link>
                   </Button>
-                  <p className="text-xs text-muted-foreground text-center">
+                  <p className="text-xs text-foreground/70 text-center">
                     Click to open the booking system in a new tab
                   </p>
                 </div>

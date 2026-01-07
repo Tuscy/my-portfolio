@@ -47,7 +47,7 @@ export default function Portfolio() {
               <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
                 Portfolio
               </h1>
-              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
+              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-foreground/70">
                 A collection of my recent projects. If you'd like to see more, feel free to get in touch!
               </p>
             </div>

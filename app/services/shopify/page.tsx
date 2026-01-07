@@ -66,7 +66,7 @@ export default function ShopifyServices() {
               <h1 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
                 Shopify Store Services
               </h1>
-              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground">
+              <p className="max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-foreground/70">
                 From custom Shopify theme design to store setup and optimisation, I provide comprehensive 
                 Shopify development services to launch and grow your online store.
               </p>
@@ -84,7 +84,7 @@ export default function ShopifyServices() {
                 <CardTitle className="text-2xl">Shopify</CardTitle>
                 <div className="mt-4">
                   <span className="text-4xl font-bold">From £699</span>
-                  <span className="text-lg text-muted-foreground ml-2">(Contact for quote)</span>
+                  <span className="text-lg text-foreground/70 ml-2">(Contact for quote)</span>
                 </div>
                 <CardDescription className="mt-4 text-base">
                   Custom-planned Shopify stores, tailored to your business
@@ -122,7 +122,7 @@ export default function ShopifyServices() {
                 </div>
                 <div className="mb-6">
                   <h3 className="text-lg font-semibold mb-3">How pricing works:</h3>
-                  <p className="text-sm text-muted-foreground mb-3">
+                  <p className="text-sm text-foreground/70 mb-3">
                     Every Shopify store is different. Prices typically range between <strong>£699 – £3,500+</strong>, depending on:
                   </p>
                   <ul className="space-y-2">
@@ -176,12 +176,12 @@ export default function ShopifyServices() {
                   {shopifyBenefits.map((benefit, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                      <p className="text-sm sm:text-base text-muted-foreground">{benefit}</p>
+                      <p className="text-sm sm:text-base text-foreground/70">{benefit}</p>
                     </div>
                   ))}
                 </div>
                 <div className="mt-8 pt-6 border-t">
-                  <p className="text-sm sm:text-base text-muted-foreground mb-4">
+                  <p className="text-sm sm:text-base text-foreground/70 mb-4">
                     Shopify is a powerful e-commerce platform that makes it easy to set up and manage your online store. 
                     With my custom development services, you'll get a store that's tailored to your brand and optimized for sales.
                   </p>

@@ -146,7 +146,7 @@ export default function Home() {
               <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
                 My Services
               </h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4 text-lg text-foreground/70">
                 Comprehensive web design and development services to bring your vision to life
               </p>
             </div>
@@ -184,10 +184,10 @@ export default function Home() {
         {/* <section className="px-4 py-16 sm:px-6 lg:px-8">
           <div className="container mx-auto max-w-6xl">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+              <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
                 What Clients Say
               </h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4 text-lg text-foreground/70">
                 Don't just take our word for it - hear from our satisfied clients
               </p>
             </div>
@@ -207,7 +207,7 @@ export default function Home() {
                   <CardContent>
                     <div className="mt-4">
                       <p className="font-semibold text-sm">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                      <p className="text-sm text-foreground/70">{testimonial.company}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -225,7 +225,7 @@ export default function Home() {
               <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
                 Featured Work
               </h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4 text-lg text-foreground/70">
                 A selection of my recent projects showcasing my skills and expertise
               </p>
             </div>
@@ -256,7 +256,7 @@ export default function Home() {
                         className="px-6 py-4"
                       >
                         <h3 className="text-xl font-semibold mb-2 text-foreground">{project.title}</h3>
-                        <p className="text-sm text-muted-foreground">{project.description}</p>
+                        <p className="text-sm text-foreground/70">{project.description}</p>
                       </CardItem>
                     </CardBody>
                   </Link>
