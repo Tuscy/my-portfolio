@@ -202,7 +202,7 @@ export default function Header() {
                                                                     ? currentTheme === "dark"
                                                                         ? "text-gray-600"
                                                                         : "text-gray-400"
-                                                                    : "text-muted-foreground"
+                                                                    : "text-foreground/70"
                                                             )}>
                                                                 WordPress websites & hosting
                                                             </p>
@@ -233,7 +233,7 @@ export default function Header() {
                                                                     ? currentTheme === "dark"
                                                                         ? "text-gray-600"
                                                                         : "text-gray-400"
-                                                                    : "text-muted-foreground"
+                                                                    : "text-foreground/70"
                                                             )}>
                                                                 Shopify store development
                                                             </p>
@@ -264,7 +264,7 @@ export default function Header() {
                                                                     ? currentTheme === "dark"
                                                                         ? "text-gray-600"
                                                                         : "text-gray-400"
-                                                                    : "text-muted-foreground"
+                                                                    : "text-foreground/70"
                                                             )}>
                                                                 Custom coded websites
                                                             </p>
@@ -295,7 +295,7 @@ export default function Header() {
                                                                     ? currentTheme === "dark"
                                                                         ? "text-gray-600"
                                                                         : "text-gray-400"
-                                                                    : "text-muted-foreground"
+                                                                    : "text-foreground/70"
                                                             )}>
                                                                 Search engine optimisation
                                                             </p>
