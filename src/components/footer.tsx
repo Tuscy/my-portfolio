@@ -107,6 +107,7 @@ export default function Footer() {
 
                 <div className="border-t border-foreground mt-5 pt-5 text-center text-sm">
                     <p>&copy; {new Date().getFullYear()} Rhyse Summers Group. All rights reserved.</p>
+                    <p className="mt-2">StickySites is a trading name of Rhyse Summers Group Ltd.</p>
                 </div>
             </div>
         </footer>
