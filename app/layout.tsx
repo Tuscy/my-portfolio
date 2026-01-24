@@ -19,6 +19,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Web Development by Rhyse Summers",
   description: "Web Development and portfolio by Rhyse Summers",
+  metadataBase: new URL("https://www.stkysites.com"),
+  alternates: {
+    canonical: "https://www.stkysites.com",
+  },
 };
 
 export default function RootLayout({
